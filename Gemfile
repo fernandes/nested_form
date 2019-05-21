@@ -60,3 +60,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+gem 'reativo'
+gem 'rolify'
+group :development do
+  gem 'annotate'
+  gem 'guard'
+  gem 'guard-bundler', require: false
+  gem 'guard-rails', require: false
+  gem 'guard-minitest', require: false
+  gem 'guard-spring', require: false
+end
+
+group :development, :test do
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'hirb'
+  gem 'awesome_print'
+end
