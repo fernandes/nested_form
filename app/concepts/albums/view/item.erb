@@ -1,0 +1,13 @@
+<tr class="cursor_pointer" data-path="/admin/cultures/<%= id %>" data-behavior="link-tr">
+  <% model_attributes.each do |attribute| %>
+  <td><%= self.send(attribute) %></td>
+  <% end %>
+  <td>
+    <%= link_to edit_item_path do %>
+      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <% end %>
+    <%= link_to delete_item_path, data: { confirm: delete_confirm_message }, method: :delete, remote: true do %>
+    <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+    <% end %>
+  </td>
+</tr>

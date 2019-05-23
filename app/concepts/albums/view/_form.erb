@@ -1,0 +1,20 @@
+<%= form_for model, url: form_path do |f| %>
+  <div class="row" style="padding: 20px 10px; border-bottom: 1px solid black;">
+    <%= f.text_field :artist %>
+    <%= f.text_field :title %>
+    <%= f.text_field :release_year %>
+  </div>
+  <%= concept(
+    'theme/cell/nested_form',
+    model,
+    form: f,
+    attribute_name: 'tracks',
+    label: 'Tracks',
+    fields: [
+      { type: :string, name: :title, label: "Title" },
+      { type: :string, name: :length, label: "Length" },
+      # { type: :collection, name: :status, label: "Status", collection: Track::STATUS_VALUES.map { |name| [ name.humanize, name ] } }
+    ]
+  )%>
+  <%= f.submit form_submit_label %>
+<% end %>

@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+allaby_1:
+  title: Glade (Zen Mechanics Remix)
+  length: "9:32"
+  order: 1
+  album: allaby
+
+allaby_2:
+  title: Spiritually Connected
+  length: "8:38"
+  order: 2
+  album: allaby
+
+allaby_3:
+  title: Imaginarium (Burn in Noise Remix)
+  length: "9:02"
+  order: 3
+  album: allaby
+
+allaby_4:
+  title: Glade (06 Remix)
+  length: "10:08"
+  order: 4
+  album: allaby
+
+animalis_1:
+  title: Infinit Movement
+  length: "7:46"
+  order: 1
+  album: animalis
+
+animalis_2:
+  title: Mumbo Jumbo Business
+  length: "6:51"
+  order: 2
+  album: animalis
+
+animalis_3:
+  title: Electronic Symphaties
+  length: "7:19"
+  order: 3
+  album: animalis

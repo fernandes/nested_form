@@ -1,0 +1,18 @@
+<div class="nested-form-attribute" data-name="<%= attribute_name %>">
+  <h3>
+    <%= label %>
+  </h3>
+  <div class="">
+    <div class="nested-form-wrapper">
+      <% form.fields_for :"#{attribute_name}", collection do |nested_form| %>
+        <%= row(nested_form) %>
+      <% end %>
+    </div>
+    <a class="btn btn-success btn-xs nested-form-add-row" title="Add">
+      <i class="fa fa-plus"></i> Add <%= add_label(attribute_name) %>
+    </a>
+  </div>
+</div>
+<script id="nested-form-template-<%= attribute_name %>" type="text/template">
+  <%= row %>
+</script>

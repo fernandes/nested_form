@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+allaby:
+  artist: Allaby
+  title: Reform
+  release_year: 2011
+
+animalis:
+  artist: Animalis
+  title: Infinit Movement
+  release_year: 2011

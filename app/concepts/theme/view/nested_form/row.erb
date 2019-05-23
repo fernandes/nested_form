@@ -1,0 +1,14 @@
+<div class="nested-form-row row" style="border-top: 1px solid black; padding: 20px 0px;">
+  <% if sortable %>
+    <div class="nested-form-sort-handle btn btn-xs btn-default">
+      <i class="fa fa-bars"></i>
+    </div>
+  <% end %>
+  <div class='pull-right'>
+    <a class="nested-form-remove-row btn btn-xs btn-danger" title="Remove">
+      <i class="fa fa-minus"></i>
+    </a>
+  </div>
+  <%= fields %>
+  <hr />
+</div>
